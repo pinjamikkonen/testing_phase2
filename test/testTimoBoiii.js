@@ -1,4 +1,4 @@
-/**Tjaa, onkohan tää kommentti**/
+/**Tjaa, onkohan tää kommentti
 var assert = require('assert');
 
 describe('Array', function() {
@@ -8,3 +8,4 @@ describe('Array', function() {
     });
   });
 });
+**/

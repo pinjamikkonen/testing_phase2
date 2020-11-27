@@ -1,5 +1,8 @@
-var assert = require('assert');
-var clamp = require('../src/clamp');
+import assert from 'chai';
+//import clamp from '../src/clamp'
+
+//var assert = require('assert');
+//var clamp = require('../src/clamp');
 
 describe('Array', function() {
   describe('#indexOf()', function() {
@@ -9,10 +12,11 @@ describe('Array', function() {
   });
 });
 
-describe('Array', function() {
+/*describe('Array', function() {
   describe('#indexOf()', function() {
     it('should return 10 idk bruh', function() {
       assert.equal(clamp(10, -5, 5), 5);
     });
   });
 });
+*/
