@@ -12,7 +12,7 @@ describe('Array', function() {
     });
   });
 });
-
+/*
 describe('Array', function() {
   describe('#clamp', function() {
     it('should return 10 idk bruh', function() {
@@ -20,3 +20,4 @@ describe('Array', function() {
     });
   });
 });
+*/
