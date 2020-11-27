@@ -1,5 +1,6 @@
-import assert from 'chai';
-//import clamp from '../src/clamp'
+import pkg from 'chai'
+import clamp from '../src/clamp.js'
+var { assert } = pkg;
 
 //var assert = require('assert');
 //var clamp = require('../src/clamp');
@@ -12,11 +13,10 @@ describe('Array', function() {
   });
 });
 
-/*describe('Array', function() {
-  describe('#indexOf()', function() {
+describe('Array', function() {
+  describe('#clamp', function() {
     it('should return 10 idk bruh', function() {
       assert.equal(clamp(10, -5, 5), 5);
     });
   });
 });
-*/
