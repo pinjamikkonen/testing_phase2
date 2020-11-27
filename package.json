@@ -12,7 +12,8 @@
   "dependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.2.1",
-    "overalls": "^1.0.4"
+    "overalls": "^1.0.4",
+    "require": "^2.4.20"
   },
   "devDependencies": {}
 }
