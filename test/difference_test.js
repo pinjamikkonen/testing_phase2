@@ -24,7 +24,7 @@ describe('difference', function() {
 
   describe('Positive values', function() {
     it('Should return empty array', function() {
-      expect(difference('bitch')).to.deep.equal([]);
+      expect(difference('testi')).to.deep.equal([]);
     });
   });
 });
