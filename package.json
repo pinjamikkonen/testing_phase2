@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=lcov"
   },
   "author": "",
   "license": "MIT",
@@ -13,7 +15,7 @@
     "babel": "^6.23.0",
     "chai": "^4.2.0",
     "mocha": "^8.2.1",
-    "overalls": "^1.0.4",
+    "coveralls": "^1.0.4",
     "require": "^2.4.20"
   },
   "devDependencies": {
