@@ -2,7 +2,7 @@ import pkg from 'chai'
 import coveralls from 'overalls'
 import clamp from '../src/clamp.js'
 var { assert } = pkg;
-Coveralls.wear
+coveralls.wear
 
 //var assert = require('assert');
 //var clamp = require('../src/clamp');
