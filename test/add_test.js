@@ -34,4 +34,17 @@ describe('add', function() {
       assert.equal(add('6', '4'), 64);
     });
   });
+
+  // EHKÄ BUGI EYYYY
+  describe('Wrong parameter: NaN', function() {
+    it('Should return a string', function() {
+      assert.equal(add(6, NaN), 6);
+    });
+  });
+
+  describe('Wrong parameter: NaN', function() {
+    it('Should return a string', function() {
+      assert.equal(add(6, undefined), 6);
+    });
+  });
 });
