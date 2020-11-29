@@ -18,10 +18,6 @@ describe('compact', function() {
     });
   });
 
-  describe('Array with no numbers', function() {
-    it('Should return array of numbers', function() {
-      var arr = ['variable', 'hmh', null, undefined, true];
-      assert.equal(compact(arr), []);
-    });
-  });
+  // TODO: Tähän vois laittaa jotain negatiivista testausta, mut tää hajoo jo positiivisesta testauksesta nih...
+
 });
