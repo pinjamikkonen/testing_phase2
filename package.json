@@ -2,13 +2,10 @@
   "name": "software-testing-assignment",
   "version": "1.0.0",
   "description": "",
-  "bin": {
-  "coveralls": "./bin/coveralls.js"
-  },
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha | coveralls"
+    "test": "mocha"
   },
   "author": "",
   "license": "MIT",
