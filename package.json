@@ -11,9 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "babel": "^6.23.0",
+    "c8": "^7.3.5",
     "chai": "^4.2.0",
-    "mocha": "^8.2.1",
     "coveralls": "^1.0.4",
+    "mocha": "^8.2.1",
     "require": "^2.4.20"
   },
   "devDependencies": {
