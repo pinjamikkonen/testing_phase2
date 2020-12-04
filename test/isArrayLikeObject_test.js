@@ -1,36 +1,37 @@
 import pkg from 'chai'
-import isArrayLike from '../src/isArrayLike.js'
+import isArrayLikeObject from '../src/isArrayLikeObject.js'
 var { assert, expect, should } = pkg;
 
+// importtaa tänne joku document testifilu
 
-describe('isArrayLike', function() {
+describe('isArrayLikeObject', function() {
   describe('[1, 2, 3]', function() {
     it('Should return true', function() {
-      assert.equal(isArrayLike([1, 2, 3]), true);
+      assert.equal(isArrayLikeObject([1, 2, 3]), true);
     });
   });
 
   describe('abc', function() {
     it('Should return false', function() {
-      assert.equal(isArrayLike('abc'), false);
+      assert.equal(isArrayLikeObject('abc'), false);
     });
   });
 
   describe('Function', function() {
     it('Should return false', function() {
-      assert.equal(isArrayLike(Function), false);
+      assert.equal(isArrayLikeObject(Function), false);
     });
   });
 
   describe('null', function() {
     it('Should return false', function() {
-      assert.equal(isArrayLike(null), false);
+      assert.equal(isArrayLikeObject(null), false);
     });
   });
 
   describe('Empty input', function() {
     it('Should return false', function() {
-      assert.equal(isArrayLike(), false);
+      assert.equal(isArrayLikeObject(), false);
     });
   });
 });
