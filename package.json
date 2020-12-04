@@ -12,7 +12,7 @@
   },
   "c8": {
     "include": [
-      "src/at.js"
+      "src/*.js"
     ],
     "exclude": [
       "src/add.js",
