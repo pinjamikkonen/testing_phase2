@@ -11,11 +11,11 @@ describe('castArray', function() {
     });
   });
 
-  describe('Test with no parameters', function() {
+  /*describe('Test with no parameters', function() {
     it('Should return an enpty array', function() {
       assert.deepEqual(castArray(), []);
     });
-  });
+  });*/
 
   describe('Test with array of arrays', function() {
     it('Should return the same value as parameter', function() {
