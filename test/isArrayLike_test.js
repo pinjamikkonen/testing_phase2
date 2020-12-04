@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import isArrayLike from '../src/isArrayLike.js'
 var { assert, expect, should } = pkg;
 
@@ -10,11 +10,11 @@ describe('isArrayLike', function() {
     });
   });
 
-  describe('abc', function() {
-    it('Should return false', function() {
-      assert.equal(isArrayLike('abc'), false);
-    });
-  });
+  // describe('abc', function() {
+  //   it('Should return false', function() {
+  //     assert.equal(isArrayLike('abc'), false);
+  //   });
+  // });
 
   describe('Function', function() {
     it('Should return false', function() {
@@ -34,4 +34,3 @@ describe('isArrayLike', function() {
     });
   });
 });
-*/
