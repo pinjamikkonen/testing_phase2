@@ -36,7 +36,7 @@ describe('map', function() {
   });
 
   describe('[4, 8]', function() {
-    it('Should return [4, 8]?', function() {
+    it('Should not crash', function() {
       assert.deepEqual(map([4, 8], Function), [4, 8]);
     });
   });
