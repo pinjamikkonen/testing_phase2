@@ -12,7 +12,41 @@
   },
   "c8": {
     "include": [
-      "src/castArray.js"
+      "src/at.js"
+    ],
+    "exclude": [
+      "src/add.js",
+      "src/camelCase.js",
+      "src/castArray.js",
+      "src/capitalize.js",
+      "src/chunk.js",
+      "src/compact.js",
+      "src/clamp.js",
+      "src/compact.js",
+      "src/countBy.js",
+      "src/defaultTo.js",
+      "src/defaultToAny.js",
+      "src/difference.js",
+      "src/divide.js",
+      "src/drop.js",
+      "src/endsWith.js",
+      "src/every.js",
+      "src/eq.js",
+      "src/filter.js",
+      "src/get.js",
+      "src/isArrayLike.js",
+      "src/isArrayLikeObject.js",
+      "src/isBoolean.js",
+      "src/isEmpty.js",
+      "src/isLength.js",
+      "src/isTypedArray.js",
+      "src/isBuffer.js",
+      "src/isDate.js",
+      "src/keys.js",
+      "src/map.js",
+      "src/memoize.js",
+      "src/slice.js",
+      "src/words.js"
     ]
   },
   "author": "",
