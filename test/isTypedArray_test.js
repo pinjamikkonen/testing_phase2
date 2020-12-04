@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import isTypedArray from '../src/isTypedArray.js'
 var { assert, expect, should } = pkg;
 
@@ -46,4 +46,3 @@ describe('isTypedArray', function() {
   });
 
 });
-*/
