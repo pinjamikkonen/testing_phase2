@@ -1,4 +1,4 @@
-import pkg from 'chai'
+/*import pkg from 'chai'
 import defaultTo from '../src/defaultTo.js'
 var { assert, expect, should } = pkg;
 
@@ -34,3 +34,4 @@ describe('defaultTo', function() {
     });
   });
 });
+*/

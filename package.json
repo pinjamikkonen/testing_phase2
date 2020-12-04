@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "test": "mocha",
     "test-with-coverage": "c8 mocha && c8 report --reporter=html",
     "coverage": "c8 mocha && c8 report --reporter=text-lcov | coveralls -v",
     "c8-help": "c8 --help"

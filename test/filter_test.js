@@ -1,4 +1,4 @@
-import pkg from 'chai'
+/*import pkg from 'chai'
 import filter from '../src/filter.js'
 var { assert, expect, should } = pkg;
 
@@ -39,3 +39,4 @@ describe('filter', function() {
     });
   });
 });
+*/

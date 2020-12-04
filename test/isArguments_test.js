@@ -1,4 +1,4 @@
-import pkg from 'chai'
+/*import pkg from 'chai'
 import isArguments from '../src/isArguments.js'
 var { assert, expect, should } = pkg;
 
@@ -49,3 +49,4 @@ describe('isArguments', function() {
     });
   });
 });
+*/

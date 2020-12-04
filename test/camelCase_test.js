@@ -1,4 +1,4 @@
-import pkg from 'chai'
+/*import pkg from 'chai'
 import camelCase from '../src/camelCase.js'
 var { assert, expect, should } = pkg;
 
@@ -41,3 +41,4 @@ describe('camelCase', function() {
       });
   });
 });
+*/

@@ -1,4 +1,4 @@
-import pkg from 'chai'
+/*import pkg from 'chai'
 import get from '../src/get.js'
 var { assert, expect, should } = pkg;
 
@@ -54,3 +54,4 @@ describe('get', function() {
     });
   });
 });
+*/

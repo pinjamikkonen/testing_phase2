@@ -1,4 +1,4 @@
-import pkg from 'chai'
+/*import pkg from 'chai'
 // import coveralls from 'coveralls'
 import clamp from '../src/clamp.js'
 var { assert } = pkg;

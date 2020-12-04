@@ -1,4 +1,4 @@
-import pkg from 'chai'
+/*import pkg from 'chai'
 import eq from '../src/eq.js'
 var { assert, expect, should } = pkg;
 
@@ -46,3 +46,4 @@ describe('eq', function() {
     });
   });
 });
+*/

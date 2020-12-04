@@ -1,4 +1,4 @@
-import pkg from 'chai'
+/*import pkg from 'chai'
 import isLength from '../src/isLength.js'
 var { assert, expect, should } = pkg;
 
@@ -33,3 +33,4 @@ describe('isLength', function() {
     });
   });
 });
+*/
