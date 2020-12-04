@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import difference from '../src/difference.js'
 var { assert, expect, should } = pkg;
 
@@ -28,4 +28,3 @@ describe('difference', function() {
     });
   });
 });
-*/
