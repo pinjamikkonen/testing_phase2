@@ -1,36 +1,27 @@
 {
   "name": "software-testing-assignment",
   "version": "1.0.0",
-  "description": "",
+  "description": "Group work for course COMP.SE.200",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
     "test-with-coverage": "c8 mocha && c8 report --reporter=html",
-     "coverage": "c8 mocha && c8 report --reporter=text-lcov | coveralls",
-     "c8-help": "c8 --help"
-   },
-   "c8": {
-     "include": [
-       "src/*.js"
-     ]
+    "coverage": "c8 mocha && c8 report --reporter=text-lcov | coveralls",
+    "c8-help": "c8 --help"
+  },
+  "c8": {
+    "include": [
+      "src/*.js"
+    ]
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "babel": "^6.23.0",
+  "dependencies": {},
+  "devDependencies": {
     "c8": "^7.3.5",
     "chai": "^4.2.0",
-    "coveralls": "^1.0.4",
-    "mocha": "^8.2.1",
-    "require": "^2.4.20"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "babel-register": "^6.26.0",
     "coveralls": "^3.1.0",
-    "mocha-lcov-reporter": "^1.3.0"
+    "mocha": "^8.2.1"
   }
 }
