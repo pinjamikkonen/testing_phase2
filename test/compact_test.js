@@ -2,6 +2,7 @@
 import compact from '../src/compact.js'
 var { assert, expect, should } = pkg;
 
+// HOX compactissa näemmä feilaa kaikki niin jätän näin!
 
 describe('compact', function() {
   describe('Array with removable content', function() {
