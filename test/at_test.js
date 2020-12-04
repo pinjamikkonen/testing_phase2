@@ -1,25 +1,25 @@
-/*
-
-EI VIELÄ TEE MITÄÄNSFL Ndöjl na
-
-*/
-
-/*
 import pkg from 'chai'
-import add from '../src/add.js'
+import at from '../src/at.js'
 var { assert } = pkg;
 
+const object = { 'a': [{ 'b': { 'c': 3 } }, 4] }
 
 describe('at', function() {
-  describe('Two positive integers', function() {
-    it('Should return the sum of integers', function() {
-      assert.equal(add(6, 4), 110);
+  describe('Test with valid parameters', function() {
+    it('Should return array with 3 and 4', function() {
+      assert.deepEqual(at(object, ['a[0].b.c', 'a[1]']), [3,4]);
     });
   });
 
-  /*describe('Two negative integers', function() {
-    it('Should return the sum of integers', function() {
-      assert.equal(add(-6, -4), -10);
+  describe('Test index out of bounds error', function() {
+    it('Should recover', function() {
+      assert.deepEqual(at(object, ['a[4].b.c']), [undefined]);
     });
-  });*/
-//});
+  });
+
+  describe('Test with nonexistent value', function() {
+    it('Should recover', function() {
+      assert.deepEqual(at(object, ['e']), [undefined]);
+    });
+  });
+});
