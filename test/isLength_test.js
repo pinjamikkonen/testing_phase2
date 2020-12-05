@@ -2,6 +2,8 @@ import pkg from 'chai'
 import isLength from '../src/isLength.js'
 var { assert, expect, should } = pkg;
 
+// HOX TSEKKAA TULOSTEET!!!!!!
+
 describe('isLength', function() {
   describe('Check if value is array-like length', function() {
     it('Should return true', function() {

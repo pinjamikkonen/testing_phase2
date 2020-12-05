@@ -10,11 +10,11 @@ describe('isArrayLike', function() {
     });
   });
 
-  // describe('abc', function() {
-  //   it('Should return false', function() {
-  //     assert.equal(isArrayLike('abc'), false);
-  //   });
-  // });
+  describe('abc', function() {
+    it('Should return true', function() {
+      assert.equal(isArrayLike('abc'), true);
+    });
+  });
 
   describe('Function', function() {
     it('Should return false', function() {
