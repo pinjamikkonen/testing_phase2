@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import capitalize from '../src/capitalize.js'
 var { assert, expect, should } = pkg;
 
@@ -51,4 +51,3 @@ describe('capitalize', function() {
     });
   });
 });
-*/

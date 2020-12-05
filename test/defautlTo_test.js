@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import defaultTo from '../src/defaultTo.js'
 var { assert, expect, should } = pkg;
 
@@ -22,16 +22,17 @@ describe('defaultTo', function() {
     });
   });
 
+  // TODO: That probably shouldn't be there
   describe('Invalid number with a string', function() {
     it('Should (probably) give "g"', function() {
       assert.equal(defaultTo(null, 'g'), 'g');
     });
   });
 
+  // Is this supposed to be like that, is it supposed to return 10
   describe('NaN number with default value', function() {
     it('Should return 10', function() {
       assert.equal(defaultTo(NaN, 10), 10);
     });
   });
 });
-*/

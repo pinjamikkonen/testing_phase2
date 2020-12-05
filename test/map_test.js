@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import map from '../src/map.js'
 var { assert, expect, should } = pkg;
 
@@ -47,4 +47,3 @@ describe('map', function() {
     });
   });
 });
-*/

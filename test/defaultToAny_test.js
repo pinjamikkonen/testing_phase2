@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import defaultToAny from '../src/defaultToAny.js'
 var { assert, expect, should } = pkg;
 
@@ -40,4 +40,3 @@ describe('defaultToAny', function() {
     });
   });
 });
-*/

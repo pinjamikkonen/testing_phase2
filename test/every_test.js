@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import every from '../src/every.js'
 var { assert, expect, should } = pkg;
 
@@ -45,4 +45,3 @@ describe('every', function() {
     });
   });
 });
-*/

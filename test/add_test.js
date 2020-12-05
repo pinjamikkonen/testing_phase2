@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import add from '../src/add.js'
 var { assert, expect, should } = pkg;
 
@@ -48,4 +48,3 @@ describe('add', function() {
     });
   });
 });
-*/

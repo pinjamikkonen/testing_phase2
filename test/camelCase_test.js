@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import camelCase from '../src/camelCase.js'
 var { assert, expect, should } = pkg;
 
@@ -7,7 +7,7 @@ var arr = [true, false, false, true];
 describe('camelCase', function() {
   describe('Change string to camelcase', function() {
     it('Should return zergIsOverPowered', function() {
-      assert.equal(camelCase("   zerG iS OVer PoWreD"), "zergIsOverPowered");
+      assert.equal(camelCase("   zerG iS OVer PoWereD"), "zergIsOverPowered");
     });
   });
 
@@ -35,10 +35,10 @@ describe('camelCase', function() {
       });
   });
 
+  // What should this one return?
   describe('Give undefined parameter to function', function() {
       it('Should return empty or undefined', function() {
         assert.deepEqual(camelCase(undefined), undefined);
       });
   });
 });
-*/

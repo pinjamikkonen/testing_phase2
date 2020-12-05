@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import filter from '../src/filter.js'
 var { assert, expect, should } = pkg;
 
@@ -8,6 +8,8 @@ const users = [
   { 'user': 'Bob', 'active': false },
   { 'user': 'Bananaman', 'active': true }
 ]
+
+// Todo, varmista että nää on tulkittu oikein, eikä toi filteri filteröi päinvastoin kuin mitä oletetaan
 
 describe('filter', function() {
   describe('Filter non-active out', function() {
@@ -39,4 +41,3 @@ describe('filter', function() {
     });
   });
 });
-*/

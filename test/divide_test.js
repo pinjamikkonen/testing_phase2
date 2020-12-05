@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import divide from '../src/divide.js'
 var { assert, expect, should } = pkg;
 
@@ -16,6 +16,7 @@ describe('divide', function() {
     });
   });
 
+  // These should be changed so that its not assert.equal but assert.notCrash or something
   describe('Divide a string', function() {
     it('Should not crash', function() {
       assert.equal(divide('s', 12), 0);
@@ -28,4 +29,3 @@ describe('divide', function() {
     });
   });
 });
-*/

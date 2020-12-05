@@ -1,7 +1,9 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import compact from '../src/compact.js'
 var { assert, expect, should } = pkg;
 
+
+// Mitäköhän tässä pitäis tapahtuu, toi dokumentaation kannalta vähän hämmentäväks meni
 
 describe('compact', function() {
   describe('Array with removable content', function() {
@@ -23,4 +25,3 @@ describe('compact', function() {
   // TODO: Tähän vois laittaa jotain negatiivista testausta, mut tää hajoo jo positiivisesta testauksesta nih...
 
 });
-*/

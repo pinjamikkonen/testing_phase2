@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import isArrayLike from '../src/isArrayLike.js'
 var { assert, expect, should } = pkg;
 
@@ -34,4 +34,3 @@ describe('isArrayLike', function() {
     });
   });
 });
-*/

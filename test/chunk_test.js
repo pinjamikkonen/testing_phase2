@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import chunk from '../src/chunk.js'
 var { assert, expect, should } = pkg;
 
@@ -41,4 +41,3 @@ describe('chunk', function() {
     });
   });
 });
-*/

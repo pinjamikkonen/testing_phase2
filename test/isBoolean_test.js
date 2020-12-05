@@ -1,4 +1,4 @@
-/*import pkg from 'chai'
+import pkg from 'chai'
 import isBoolean from '../src/isBoolean.js'
 var { assert, expect, should } = pkg;
 
@@ -31,7 +31,7 @@ describe('isBoolean', function() {
   });
 
   describe('1+2==3', function() {
-    it('Should return true?', function() {
+    it('Should return true', function() {
       assert.equal(isBoolean((1+2==3)), true);
     });
   });
@@ -48,4 +48,3 @@ describe('isBoolean', function() {
     });
   });
 });
-*/
