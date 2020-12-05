@@ -43,9 +43,15 @@ describe('reduce', function() {
     });
   });
 
-  describe('x.6. [1, 2]', function() {
-    it('Should return undefined', function() {
-      assert.deepEqual(reduce(), undefined);
+  // describe('x.7. Missing values: [1, 2]', function() {
+  //   it('Should not crash', function() {
+  //     assert.deepEqual(reduce([1, 2]), undefined);
+  //   });
+  // });
+
+  describe('x.7. reduce([1, 2, 3, 4], (sum, n) => kissa, 1', function() {
+    it('Should not crash', function() {
+      assert.deepEqual(reduce([1, 2, 3, 4], (sum, n) => 'kissa', 1), 'kissa');
     });
   });
 });
