@@ -3,11 +3,11 @@ import every from '../src/every.js'
 var { assert, expect, should } = pkg;
 
 describe('every', function() {
-  describe('[true, false], Boolean', function() {
-    it('Should return true', function() {
-      assert.equal(every([true, false], Boolean), true);
-    });
-  });
+  // describe('[true, false], Boolean', function() {
+  //   it('Should return true', function() {
+  //     assert.equal(every([true, false], Boolean), true);
+  //   });
+  // });
 
   describe('[true, 1, null, yes], Boolean', function() {
     it('Should return false', function() {
@@ -27,11 +27,11 @@ describe('every', function() {
     });
   });
 
-  describe('str x 2', function() {
-    it('Should return false', function() {
-      assert.equal(every(['sana', 'toinen', 15, true, null], String), false);
-    });
-  });
+  // describe('str x 2', function() {
+  //   it('Should return false', function() {
+  //     assert.equal(every(['sana', 'toinen', 15, true, null], String), false);
+  //   });
+  // });
 
   describe('Inttejä', function() {
     it('Should return true', function() {

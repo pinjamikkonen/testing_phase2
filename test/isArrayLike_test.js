@@ -11,8 +11,8 @@ describe('isArrayLike', function() {
   });
 
   describe('abc', function() {
-    it('Should return false', function() {
-      assert.equal(isArrayLike('abc'), false);
+    it('Should return true', function() {
+      assert.equal(isArrayLike('abc'), true);
     });
   });
 

@@ -2,6 +2,7 @@ import pkg from 'chai'
 import divide from '../src/divide.js'
 var { assert, expect, should } = pkg;
 
+// HOX kaikki testit failaa niin jätän näin :)
 
 describe('divide', function() {
   describe('Divide two numbers', function() {

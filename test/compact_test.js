@@ -2,6 +2,7 @@ import pkg from 'chai'
 import compact from '../src/compact.js'
 var { assert, expect, should } = pkg;
 
+// HOX compactissa näemmä feilaa kaikki niin jätän näin!
 
 // Mitäköhän tässä pitäis tapahtuu, toi dokumentaation kannalta vähän hämmentäväks meni
 

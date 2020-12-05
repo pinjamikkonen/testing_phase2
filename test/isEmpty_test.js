@@ -7,6 +7,7 @@ let set2 = new Set();
 set2.add(1)
 
 describe('isEmpty', function() {
+
   describe('null', function() {
     it('Should return true', function() {
       assert.equal(isEmpty(null), true);
@@ -22,12 +23,6 @@ describe('isEmpty', function() {
   describe('[1, 2, 3]', function() {
     it('Should return false', function() {
       assert.equal(isEmpty([1, 2, 3]), false);
-    });
-  });
-
-  describe('null', function() {
-    it('Should return true', function() {
-      assert.equal(isEmpty(null), true);
     });
   });
 
