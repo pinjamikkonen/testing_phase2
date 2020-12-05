@@ -30,9 +30,9 @@ describe('get', function() {
     });
   });
 
-  describe('object, a.b.c, idk bruh', function() {
-    it('Should return idk bruh', function() {
-      assert.equal(get(object, 'a.b.c', 'idk bruh'), 'idk bruh');
+  describe('object, a.b.c, test_string', function() {
+    it('Should return test_string', function() {
+      assert.equal(get(object, 'a.b.c', 'test_string'), 'test_string');
     });
   });
 
