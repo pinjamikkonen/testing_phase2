@@ -70,4 +70,9 @@ describe('isObject', function() {
     });
   });
 
+  describe('x.12. Empty input', function() {
+    it('Should return false', function() {
+      assert.equal(isObject(), false);
+    });
+  });
 });

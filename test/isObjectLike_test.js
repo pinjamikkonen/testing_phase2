@@ -69,4 +69,10 @@ describe('isObjectLike', function() {
       assert.equal(isObjectLike(55), false);
     });
   });
+
+  describe('x.12. Empty input', function() {
+    it('Should return false', function() {
+      assert.equal(isObjectLike(), false);
+    });
+  });
 });
