@@ -35,19 +35,10 @@ describe('camelCase', function() {
   //       assert.equal(camelCase(arr), "trueFalseFalseTrue");
   //     });
   // });
-
-<<<<<<< HEAD
   // What should this one return?
   describe('Give undefined parameter to function', function() {
       it('Should return empty or undefined', function() {
         assert.deepEqual(camelCase(undefined), undefined);
       });
   });
-=======
-  // describe('Give undefined parameter to function', function() {
-  //     it('Should return empty or undefined', function() {
-  //       assert.deepEqual(camelCase(undefined), undefined);
-  //     });
-  // });
->>>>>>> 61b1e37c85971baceb6a7d469c1d334e0077f05f
 });

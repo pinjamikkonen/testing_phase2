@@ -19,16 +19,33 @@ describe('reduce', function() {
     });
   });
 
-  describe('x.1. [1, 2, 3, 4], (sum, n) => sum * n, -3', function() {
+  describe('x.3. [1, 2, 3, 4], (sum, n) => sum * n, -3', function() {
     it('Should return 24', function() {
       assert.deepEqual(reduce([1, 2, 3, 4], (sum, n) => sum * n, 1), 24);
     });
   });
 
-  describe('x.1. Missing parameter: [1, 2], (sum, n) => sum + n', function() {
+  describe('x.4. Missing parameter: [1, 2], (sum, n) => sum + n', function() {
     it('Should recover', function() {
       assert.deepEqual(reduce([1, 2, 13], (sum, n) => sum + n), 16);
     });
   });
 
+  describe('x.5. Missing parameter: (sum, n) => sum + n', function() {
+    it('Should recover', function() {
+      assert.deepEqual(reduce((sum, n) => sum + n), undefined);
+    });
+  });
+
+  describe('x.6. Empty input', function() {
+    it('Should return undefined', function() {
+      assert.deepEqual(reduce(), undefined);
+    });
+  });
+
+  describe('x.6. [1, 2]', function() {
+    it('Should return undefined', function() {
+      assert.deepEqual(reduce(), undefined);
+    });
+  });
 });
