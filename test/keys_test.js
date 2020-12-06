@@ -14,45 +14,45 @@ const test_object2 = {
   c: [1, 2, 3]
 };
 
-describe('keys', function() {
+describe('34. keys', function() {
 
-  describe('x.1. test (string)', function() {
+  describe('34.1. Input is a string ("test")', function() {
     it('Should return [0, 1, 2, 3]', function() {
       assert.deepEqual(keys('test'), ['0', '1', '2', '3']);
     });
   });
 
-  describe('x.2. test_object', function() {
+  describe('34.2. Input is an object (test_object)', function() {
     it('Should return [a, b, c]', function() {
       assert.deepEqual(keys(test_object), ['a', 'b', 'c']);
     });
   });
 
-  describe('x.3. Function', function() {
+  describe('34.3. Input is a function object (Function)', function() {
     it('Should return []', function() {
       assert.deepEqual(keys(Function), []);
     });
   });
 
-  describe('x.4. null', function() {
+  describe('34.4. Input is null', function() {
     it('Should return []', function() {
       assert.deepEqual(keys(null), []);
     });
   });
 
-  describe('x.5. test_object2, test_object2', function() {
+  describe('34.5. Input is two test objects (test_object2, test_object2.c)', function() {
     it('Should recover from two parameters', function() {
       assert.deepEqual(keys(test_object, test_object2.c), ['a', 'b', 'c']);
     });
   });
 
-  describe('x.6. test_object2.c', function() {
+  describe('34.6. Input is an object (test_object2.c)', function() {
     it('Should return [0, 1, 2]', function() {
       assert.deepEqual(keys(test_object2.c), ['0', '1', '2']);
     });
   });
 
-  describe('x.6. Empty input', function() {
+  describe('34.6. Empty input', function() {
     it('Should return []', function() {
       assert.deepEqual(keys(), []);
     });

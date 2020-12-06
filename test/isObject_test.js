@@ -2,75 +2,75 @@ import pkg from 'chai'
 import isObject from '../src/isObject.js'
 var { assert, expect, should } = pkg;
 
-describe('isObject', function() {
+describe('31. isObject', function() {
 
-  describe('x.1. {}', function() {
+  describe('31.1. Input is an empty object ({})', function() {
     it('Should return true', function() {
       assert.equal(isObject({}), true);
     });
   });
 
-  describe('x.2. [1, 2, 3]', function() {
+  describe('31.2. Input is an array ([1, 2, 3])', function() {
     it('Should return true', function() {
       assert.equal(isObject([1, 2, 3]), true);
     });
   });
 
-  describe('x.3. Function', function() {
+  describe('31.3. Input is a function object (Function)', function() {
     it('Should return true', function() {
       assert.equal(isObject(Function), true);
     });
   });
 
-  describe('x.4. new Number(55)', function() {
+  describe('31.4. Input is a number object (new Number(55))', function() {
     it('Should return true', function() {
       assert.equal(isObject(new Number(55)), true);
     });
   });
 
-  describe('x.5. new String(test_string)', function() {
+  describe('31.5. Input is a string object (new String("test_string"))', function() {
     it('Should return true', function() {
       assert.equal(isObject(new String('test_string')), true);
     });
   });
 
-  describe('x.6. new RegExp(\\w+)', function() {
+  describe('31.6. Input is a regular expression object (new RegExp("\\w+"))', function() {
     it('Should return true', function() {
       assert.equal(isObject(new RegExp('\\w+')), true);
     });
   });
 
-  describe('x.7. null', function() {
+  describe('31.7. Input is null (null)', function() {
     it('Should return false', function() {
       assert.equal(isObject(null), false);
     });
   });
 
-  describe('x.8. NaN', function() {
+  describe('31.8. Input is NaN (NaN)', function() {
     it('Should return false', function() {
       assert.equal(isObject(NaN), false);
     });
   });
 
-  describe('x.9. test_string', function() {
+  describe('31.9. Input is a string ("test_string")', function() {
     it('Should return false', function() {
       assert.equal(isObject('test_string'), false);
     });
   });
 
-  describe('x.10. true', function() {
+  describe('31.10. Input is boolean (true)', function() {
     it('Should return false', function() {
       assert.equal(isObject(true), false);
     });
   });
 
-  describe('x.11. 55', function() {
+  describe('31.11. Input is a number (55)', function() {
     it('Should return false', function() {
       assert.equal(isObject(55), false);
     });
   });
 
-  describe('x.12. Empty input', function() {
+  describe('31.12. Empty input', function() {
     it('Should return false', function() {
       assert.equal(isObject(), false);
     });
