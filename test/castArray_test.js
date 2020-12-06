@@ -4,28 +4,28 @@ var { assert } = pkg;
 
 var arr = [['a', 'b']]
 
-describe('castArray', function() {
-  describe('Test with an int', function() {
-    it('Should return parameters as an array', function() {
+describe('24. castArray', function() {
+  describe('24.1. Test with an integer (1)', function() {
+    it('Should return [1]', function() {
       assert.deepEqual(castArray(1), [1]);
     });
   });
 
-  describe('Test with no parameters', function() {
-    it('Should return an enpty array', function() {
+  describe('24.2. Test with no parameters ()', function() {
+    it('Should return an empty array', function() {
       assert.deepEqual(castArray(), []);
     });
   });
 
-  describe('Test with array of arrays', function() {
+  describe('24.3. Test with array of arrays ([["a", "b"]])', function() {
     it('Should return the same value as parameter', function() {
       assert.deepEqual(castArray(arr), [['a', 'b']]);
     });
   });
 
-  describe('Test with multiple parameters', function() {
-    it('Should restore', function() {
-      assert.isOk(castArray('a', 12, true));
+  describe('24.4. Test with multiple parameters ("a", 12, true)', function() {
+    it('Should return ["a"]', function() {
+      assert.deepEqual(castArray('a', 12, true), ['a']);
     });
   });
 });
