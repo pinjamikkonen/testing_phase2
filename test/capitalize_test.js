@@ -45,7 +45,7 @@ describe('23. capitalize', function() {
     });
   });
 
-  describe('A null value (null)', function() {
+  describe('23.8. A null value (null)', function() {
     it('null', function() {
       assert.equal(capitalize(null), null);
     });
