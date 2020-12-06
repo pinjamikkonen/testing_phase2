@@ -2,47 +2,49 @@ import pkg from 'chai'
 import eq from '../src/eq.js'
 var { assert, expect, should } = pkg;
 
-describe('eq', function() {
-  describe('{a : 1}, {a : 1}', function() {
-    it('Should return true', function() {
-      const object = { 'a': 1 }
-      const other = { 'a': 1 }
+const object = { 'a': 1 }
+const other = { 'a': 1 }
 
+describe('8. eq', function() {
+  describe('8.1. Two identical objects (object, object)', function() {
+    it('Should return true', function() {
       assert.equal(eq(object, object), true);
     });
   });
 
-  describe('{a : 1}, {a : 1}', function() {
+  describe('8.2. Two unidentical objects (object, other)', function() {
     it('Should return false', function() {
-      const object = { 'a': 1 }
-      const other = { 'a': 1 }
-
       assert.equal(eq(object, other), false);
     });
   });
 
-  describe('a, a', function() {
+  describe('8.3. Two identical string values ("a", "a")', function() {
     it('Should return true', function() {
       assert.equal(eq('a', 'a'), true);
     });
   });
 
-  // Mitähän nyt taas
-  // describe('a, Object(a)', function() {
-  //   it('Should return false', function() {
-  //     assert.equal(eq('a', Object('a')), false);
-  //   });
-  // });
+  describe('8.4. Two unidentical values ("a", Object("a"))', function() {
+    it('Should return false', function() {
+      assert.equal(eq('a', Object('a')), false);
+    });
+  });
 
-  describe('NaN, NaN', function() {
+  describe('8.5. Two identical values (NaN, NaN)', function() {
     it('Should return true', function() {
       assert.equal(eq(NaN, NaN), true);
     });
   });
 
-  describe('NaN, NaN', function() {
+  describe('8.6. No input values', function() {
     it('Should return true', function() {
       assert.equal(eq(), true);
+    });
+  });
+
+  describe('8.6. One missing value ("a")', function() {
+    it('Should return false', function() {
+      assert.equal(eq('a',), false);
     });
   });
 });

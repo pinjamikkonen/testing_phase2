@@ -9,10 +9,8 @@ const users = [
   { 'user': 'Bananaman', 'active': true }
 ]
 
-// Todo, varmista että nää on tulkittu oikein, eikä toi filteri filteröi päinvastoin kuin mitä oletetaan
-
-describe('filter', function() {
-  describe('Filter non-active out', function() {
+describe('9. filter', function() {
+  describe('9.1. Filter with boolean value (users, ({ active }) => active)', function() {
     it('Should return Diego and Bananaman', function() {
       assert.deepEqual(filter(users, ({ active }) => active), [
         { 'user': 'Diego', 'active': true },
@@ -21,21 +19,21 @@ describe('filter', function() {
     });
   });
 
-  // describe('Filter with non-boolean attribute', function() {
-  //   it('Should return Diego', function() {
-  //     assert.deepEqual(filter(users, ({ user }) => "Diego"), [
-  //       { 'user': 'Diego', 'active': true }
-  //     ]);
-  //   });
-  // });
+  describe('9.2. Filter with non-boolean attribute (users, ({ user }) => "Diego")', function() {
+    it('Should return Diego', function() {
+      assert.deepEqual(filter(users, ({ user }) => 'Diego'), [
+        { 'user': 'Diego', 'active': true }
+      ]);
+    });
+  });
 
-  // describe('Filter with attribute that doesnt exist', function() {
-  //   it('Should return empty list', function() {
-  //     assert.deepEqual(filter(users, ({ powerlevel }) => 9001), [[]]);
-  //   });
-  // });
+  describe('9.3. Filter with attribute that doesnt exist (users, ({ powerlevel }) => 9001), [[]])', function() {
+    it('Should return empty list', function() {
+      assert.deepEqual(filter(users, ({ powerlevel }) => 9001), [[]]);
+    });
+  });
 
-  describe('Filter a null-value', function() {
+  describe('9.4. Filter a null-value (null, ({ active }) => active), [[]])', function() {
     it('Should return empty list', function() {
       assert.deepEqual(filter(null, ({ active }) => active), [[]]);
     });
