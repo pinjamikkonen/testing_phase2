@@ -39,7 +39,7 @@ describe('25. chunk', function() {
     });
   });
 
-  describe('25.6. A string and null (chunk, null)', function() {
+  describe('25.7. A string and null (chunk, null)', function() {
     it('Should return an empty array []', function() {
       assert.deepEqual(chunk('chunk', null), []);
     });
