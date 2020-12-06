@@ -76,5 +76,4 @@ describe('toNumber', function() {
       assert.deepEqual(toNumber(Boolean), NaN);
     });
   });
-
 });
