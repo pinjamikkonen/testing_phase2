@@ -15,4 +15,10 @@ describe('36. ceil', function() {
       assert.equal(ceil(2.3, -3), 1000);
     });
   });
+
+  describe('36.3. Input is a NaN', function() {
+    it('Should return 1000', function() {
+      assert.equal(ceil(NaN, -3), NaN);
+    });
+  });
 });
