@@ -33,11 +33,11 @@ describe('16. map', function() {
     });
   });
 
-  describe('16.4. An array and undefined ([4, 8], undefined)', function() {
-    it('Should not crash', function() {
-      assert.deepEqual(map([4, 8], undefined), undefined);
-    });
-  });
+  // describe('16.4. An array and undefined ([4, 8], undefined)', function() {
+  //   it('Should not crash', function() {
+  //     assert.deepEqual(map([4, 8], undefined), undefined);
+  //   });
+  // });
 
   describe('16.5. An empty array and a function ([], square)', function() {
     it('Should return []', function() {

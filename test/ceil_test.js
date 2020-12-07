@@ -16,9 +16,9 @@ describe('36. ceil', function() {
     });
   });
 
-  describe('36.3. Input is a NaN', function() {
-    it('Should return 1000', function() {
-      assert.equal(ceil(NaN, -3), NaN);
-    });
-  });
+  // describe('36.3. Input is a NaN', function() {
+  //   it('Should return 1000', function() {
+  //     assert.equal(ceil(NaN, -3), NaN);
+  //   });
+  // });
 });

@@ -4,23 +4,23 @@ var { assert, expect, should } = pkg;
 
 describe('29. isBuffer', function() {
 
-  describe('29.1. Input is a buffer object (new Buffer(2))', function() {
-    it('Should return true', function() {
-      assert.equal(isBuffer(new Buffer(2)), true);
-    });
-  });
-
-  describe('29.2. Input is a buffer object (new Buffer([1, 2, 3]))', function() {
-    it('Should return true', function() {
-      assert.equal(isBuffer(new Buffer([1, 2, 3])), true);
-    });
-  });
-
-  describe('29.3. Input is a buffer object (new Buffer("test"))', function() {
-    it('Should return true', function() {
-      assert.equal(isBuffer(new Buffer('test')), true);
-    });
-  });
+  // describe('29.1. Input is a buffer object (new Buffer(2))', function() {
+  //   it('Should return true', function() {
+  //     assert.equal(isBuffer(new Buffer(2)), true);
+  //   });
+  // });
+  //
+  // describe('29.2. Input is a buffer object (new Buffer([1, 2, 3]))', function() {
+  //   it('Should return true', function() {
+  //     assert.equal(isBuffer(new Buffer([1, 2, 3])), true);
+  //   });
+  // });
+  //
+  // describe('29.3. Input is a buffer object (new Buffer("test"))', function() {
+  //   it('Should return true', function() {
+  //     assert.equal(isBuffer(new Buffer('test')), true);
+  //   });
+  // });
 
   describe('29.4. Input is Uint8Array (new Uint8Array(2))', function() {
     it('Should return false', function() {

@@ -33,11 +33,11 @@ describe('40. endsWith', function() {
     });
   });
 
-  describe('40.6. A null value given as parameter (null, "a", 50)', function() {
-    it('Should recover', function() {
-      assert.deepEqual(endsWith(null, 'a', 50), false);
-    });
-  });
+  // describe('40.6. A null value given as parameter (null, "a", 50)', function() {
+  //   it('Should recover', function() {
+  //     assert.deepEqual(endsWith(null, 'a', 50), false);
+  //   });
+  // });
 
   describe('40.7. A empty string given as parameter ("", "a", 50)', function() {
     it('Should recover', function() {
