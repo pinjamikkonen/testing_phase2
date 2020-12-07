@@ -4,9 +4,9 @@ var { assert, expect, should } = pkg;
 
 describe('3. compact', function() {
   describe('3.1. Array with removable content', function() {
-    it('Should return [6, 4, 2, 3]', function() {
+    it('Should return [0, 1, 2, 3]', function() {
       var arr = [0, 1, false, 2, '', 3];
-      assert.equal(compact(arr), [1, 2, 3]);
+      assert.equal(compact(arr), [0, 1, 2, 3]);
     });
   });
 

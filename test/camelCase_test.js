@@ -37,7 +37,7 @@ describe('22. camelCase', function() {
   });
   // What should this one return?
   describe('22.6. Give undefined parameter to function', function() {
-      it('Should return empty or undefined', function() {
+      it('Should return undefined', function() {
         assert.deepEqual(camelCase(undefined), undefined);
       });
   });
