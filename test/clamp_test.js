@@ -9,11 +9,11 @@ describe('37. clamp', function() {
     });
   });
 
-  // describe('37.2. Positive clamp value (10, -5, 5)', function() {
-  //   it('Should return 5', function() {
-  //     assert.equal(clamp(10, -5, 5), 5);
-  //   });
-  // });
+  describe('37.2. Positive clamp value (10, -5, 5)', function() {
+    it('Should return 5', function() {
+      assert.equal(clamp(10, -5, 5), 5);
+    });
+  });
 
   describe('37.3. Positive clamp value (-5, 5, 10', function() {
     it('Should return 5', function() {

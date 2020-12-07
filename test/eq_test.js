@@ -24,11 +24,11 @@ describe('8. eq', function() {
     });
   });
 
-  // describe('8.4. Two unidentical values ("a", Object("a"))', function() {
-  //   it('Should return false', function() {
-  //     assert.equal(eq('a', Object('a')), false);
-  //   });
-  // });
+  describe('8.4. Two unidentical values ("a", Object("a"))', function() {
+    it('Should return false', function() {
+      assert.equal(eq('a', Object('a')), false);
+    });
+  });
 
   describe('8.5. Two identical values (NaN, NaN)', function() {
     it('Should return true', function() {

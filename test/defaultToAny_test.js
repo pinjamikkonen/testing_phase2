@@ -40,9 +40,9 @@ describe('4. defaultToAny', function() {
     });
   });
 
-  // describe('4.7. Values NaN, 10', function() {
-  //   it('Should return 10', function() {
-  //     assert.equal(defaultToAny(NaN, 10), 10);
-  //   });
-  // });
+  describe('4.7. Values NaN, 10', function() {
+    it('Should return 10', function() {
+      assert.equal(defaultToAny(NaN, 10), 10);
+    });
+  });
 });

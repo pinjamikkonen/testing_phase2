@@ -34,11 +34,11 @@ describe('5. defaultTo', function() {
     });
   });
 
-  // describe('5.6. NaN number with default value (NaN, 10)', function() {
-  //   it('Should return 10', function() {
-  //     assert.equal(defaultTo(NaN, 10), 10);
-  //   });
-  // });
+  describe('5.6. NaN number with default value (NaN, 10)', function() {
+    it('Should return 10', function() {
+      assert.equal(defaultTo(NaN, 10), 10);
+    });
+  });
 
   describe('5.7. Empty input', function() {
     it('Should return undefined', function() {

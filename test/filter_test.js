@@ -19,19 +19,19 @@ describe('9. filter', function() {
     });
   });
 
-  // describe('9.2. Filter with non-boolean attribute (users, ({ user }) => "Diego")', function() {
-  //   it('Should return Diego', function() {
-  //     assert.deepEqual(filter(users, ({ user }) => 'Diego'), [
-  //       { 'user': 'Diego', 'active': true }
-  //     ]);
-  //   });
-  // });
-  //
-  // describe('9.3. Filter with attribute that doesnt exist (users, ({ powerlevel }) => 9001), [[]])', function() {
-  //   it('Should return empty list', function() {
-  //     assert.deepEqual(filter(users, ({ powerlevel }) => 9001), [[]]);
-  //   });
-  // });
+  describe('9.2. Filter with non-boolean attribute (users, ({ user }) => "Diego")', function() {
+    it('Should return Diego', function() {
+      assert.deepEqual(filter(users, ({ user }) => 'Diego'), [
+        { 'user': 'Diego', 'active': true }
+      ]);
+    });
+  });
+
+  describe('9.3. Filter with attribute that doesnt exist (users, ({ powerlevel }) => 9001), [[]])', function() {
+    it('Should return empty list', function() {
+      assert.deepEqual(filter(users, ({ powerlevel }) => 9001), [[]]);
+    });
+  });
 
   describe('9.4. Filter a null-value (null, ({ active }) => active), [[]])', function() {
     it('Should return empty list', function() {

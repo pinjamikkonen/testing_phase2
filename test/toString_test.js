@@ -11,17 +11,17 @@ describe('21. toString', function() {
     });
   });
 
-  // describe('21.2. null', function() {
-  //   it('Should return empty string', function() {
-  //     assert.equal(toString(null), '');
-  //   });
-  // });
-  //
-  // describe('21.3. undefined', function() {
-  //   it('Should return empty string', function() {
-  //     assert.equal(toString(undefined), '');
-  //   });
-  // });
+  describe('21.2. null', function() {
+    it('Should return empty string', function() {
+      assert.equal(toString(null), '');
+    });
+  });
+
+  describe('21.3. undefined', function() {
+    it('Should return empty string', function() {
+      assert.equal(toString(undefined), '');
+    });
+  });
 
   describe('21.4. NaN', function() {
     it('Should return a string "NaN"', function() {
@@ -35,11 +35,11 @@ describe('21. toString', function() {
     });
   });
 
-  // describe('21.6. Empty input', function() {
-  //   it('Should return empty string', function() {
-  //     assert.equal(toString(), '');
-  //   });
-  // });
+  describe('21.6. Empty input', function() {
+    it('Should return empty string', function() {
+      assert.equal(toString(), '');
+    });
+  });
 
   describe('21.7. -0 (Number)', function() {
     it('Should return -0 (string)', function() {

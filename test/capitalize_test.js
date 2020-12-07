@@ -15,11 +15,11 @@ describe('23. capitalize', function() {
     });
   });
 
-  // describe('23.3. A string with whitespaces ("  fred")', function() {
-  //   it('Should return "Fred"', function() {
-  //     assert.deepEqual(capitalize('   fred'), 'Fred');
-  //   });
-  // });
+  describe('23.3. A string with whitespaces ("  fred")', function() {
+    it('Should return "Fred"', function() {
+      assert.deepEqual(capitalize('   fred'), 'Fred');
+    });
+  });
 
   describe('23.4. String with special characters ("[FRED]")', function() {
     it('Should return [fred]', function() {
@@ -32,12 +32,12 @@ describe('23. capitalize', function() {
       assert.deepEqual(capitalize('****'), '****');
     });
   });
-  //
-  // describe('23.6. An array of numbers [1, 2, 3]', function() {
-  //   it('Shouldnt crash', function() {
-  //     expect.fail(capitalize([1, 2, 3]));
-  //   });
-  // });
+
+  describe('23.6. An array of numbers [1, 2, 3]', function() {
+    it('Shouldnt crash', function() {
+      expect.fail(capitalize([1, 2, 3]));
+    });
+  });
 
   describe('23.7. An empty string ("")', function() {
     it('Empty string', function() {
@@ -45,9 +45,9 @@ describe('23. capitalize', function() {
     });
   });
 
-  // describe('23.8. A null value (null)', function() {
-  //   it('null', function() {
-  //     assert.equal(capitalize(null), null);
-  //   });
-  // });
+  describe('23.8. A null value (null)', function() {
+    it('null', function() {
+      assert.equal(capitalize(null), null);
+    });
+  });
 });
