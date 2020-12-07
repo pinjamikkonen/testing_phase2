@@ -3,7 +3,6 @@ import camelCase from '../src/camelCase.js'
 var { assert, expect, should } = pkg;
 
 var arr = [true, false, false, true];
-// feilaavat testit kommentoitu pois
 
 describe('22. camelCase', function() {
   describe('22.1. Change string to camelcase ("   zerG iS OVer PoWereD")', function() {
@@ -35,7 +34,7 @@ describe('22. camelCase', function() {
         assert.equal(camelCase(arr), "trueFalseFalseTrue");
       });
   });
-  // What should this one return?
+
   describe('22.6. Give undefined parameter to function', function() {
       it('Should return undefined', function() {
         assert.deepEqual(camelCase(undefined), undefined);
