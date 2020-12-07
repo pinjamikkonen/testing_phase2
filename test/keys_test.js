@@ -52,7 +52,7 @@ describe('34. keys', function() {
     });
   });
 
-  describe('34.6. Empty input', function() {
+  describe('34.7. Empty input', function() {
     it('Should return []', function() {
       assert.deepEqual(keys(), []);
     });

@@ -65,7 +65,7 @@ describe('35. words', function() {
   });
 
   describe('35.11. Empty input', function() {
-    it('Should recover from error', function() {
+    it('Should return an empty array', function() {
       assert.deepEqual(words(), []);
     });
   });

@@ -25,7 +25,7 @@ describe('17. reduce', function() {
     });
   });
 
-  describe('17.4. Missing parameter ([1, 2], (sum, n) => sum + n)', function() {
+  describe('17.4. Missing parameter ([1, 2, 13], (sum, n) => sum + n)', function() {
     it('Should recover', function() {
       assert.deepEqual(reduce([1, 2, 13], (sum, n) => sum + n), 16);
     });

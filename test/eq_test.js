@@ -42,7 +42,7 @@ describe('8. eq', function() {
     });
   });
 
-  describe('8.6. One missing value ("a")', function() {
+  describe('8.7. One missing value ("a")', function() {
     it('Should return false', function() {
       assert.equal(eq('a',), false);
     });
