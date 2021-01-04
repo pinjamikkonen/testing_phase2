@@ -12,5 +12,10 @@ Removing this license file directly violates terms and conditions of the softwar
 
 Individuals who remove or modify the license file will also carry the consequences.
 
+## How to run
+
+1. Download npm
+2. Run "npm install" in directory
+3. Run "mocha" in directory to run tests
 
 [![Coverage Status](https://coveralls.io/repos/github/pinjamikkonen/testing_phase2/badge.svg?branch=master)](https://coveralls.io/github/pinjamikkonen/testing_phase2?branch=master)
